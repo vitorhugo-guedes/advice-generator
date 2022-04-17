@@ -1,0 +1,21 @@
+// Color Text
+$primary-color: hsl(193, 38%, 86%);
+$secondary-color: hsl(150, 100%, 66%);
+
+// Background
+$GrayishBlue: hsl(217, 19%, 38%);
+$body-bg: hsl(218, 23%, 16%);
+$card-bg: hsl(217, 19%, 24%);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin flex($direction:row, $align:center, $justify:center) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}

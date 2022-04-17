@@ -4,25 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Advice generator app</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./dist/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./dist/css/main.css">
+  <title>Advice generator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  Advice #<!-- Advice ID goes here -->
+  <section class="card">
 
-  "<!-- Advice text goes here -->"
+    <small class="advice-number">advice #500</small>
+
+    <h4 class="advice">
+      "Lorem ipsum dolor sit amet, 
+      consectetur adipisicing elit. Molestiae voluptates, 
+      alias voluptas quasi quisquam doloribus.""
+    </h4>
+    <span></span>
+    <button class="dice-button"><img src="dist/images/icon-dice.svg" alt=""></button>
+  </section>
   
-  <div class="attribution">
+  <footer>
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="#">Vitor Hugo</a>.
+  </footer>
+
+  <script src="./dist/source/main.js"></script>
 </body>
 </html>
