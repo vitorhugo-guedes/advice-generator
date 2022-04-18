@@ -6,22 +6,20 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./dist/images/favicon-32x32.png">
   <link rel="stylesheet" href="./dist/css/main.css">
-  <title>Advice generator app</title>
+  <title>Advice Generator App</title>
 
 </head>
 <body>
 
   <section class="card">
 
-    <small class="advice-number">advice #<span id="adviceID">500</span></small>
+    <small class="advice-number">advice #<span id="adviceID"></span></small>
 
-    <h4 id="advice" class="advice">
-      "Lorem ipsum dolor sit amet, 
-      consectetur adipisicing elit. Molestiae voluptates, 
-      alias voluptas quasi quisquam doloribus.""
-    </h4>
+    <div class="advice">
+      <h4 id="advice"></h4>
+    </div>
     
-    <span><img src="./dist/images/pattern-divider-desktop.svg" alt="divider"></span>
+    <span class="divider"><img src="./dist/images/pattern-divider-desktop.svg" alt="divider"></span>
 
     <button id="diceBtn" class="dice-btn"><img src="dist/images/icon-dice.svg" alt="dice icon"></button>
   </section>

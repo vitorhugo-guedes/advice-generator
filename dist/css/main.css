@@ -11,23 +11,37 @@
   align-items: center;
   justify-content: space-around;
   position: relative;
-  height: 70%;
-  width: 38vw;
+  height: 20rem;
+  width: 35rem;
   padding: 1.5rem 2rem;
   text-align: center;
   background: hsl(217deg, 19%, 24%);
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
 }
-.card .advice {
-  color: hsl(193deg, 38%, 86%);
-}
 .card .advice-number {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 10%;
+  width: 100%;
   color: hsl(150deg, 100%, 66%);
   font-size: 10px;
   font-weight: 800;
   letter-spacing: 5px;
   text-transform: uppercase;
+}
+.card .advice {
+  display: grid;
+  place-items: center;
+  height: 50%;
+  color: hsl(193deg, 38%, 86%);
+}
+.card .divider {
+  display: grid;
+  place-items: center;
+  height: 30%;
 }
 .card .dice-btn {
   cursor: pointer;
@@ -35,7 +49,7 @@
   bottom: -25px;
   display: grid;
   place-items: center;
-  margin-top: 1rem;
+  margin-top: 2rem;
   width: 50px;
   height: 50px;
   border: none;

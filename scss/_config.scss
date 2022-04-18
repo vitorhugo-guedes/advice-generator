@@ -19,3 +19,12 @@ $card-bg: hsl(217, 19%, 24%);
     align-items: $align;
     justify-content: $justify;
 }
+
+@mixin center(){
+    display: grid;
+    place-items: center;
+}
+
+@mixin mobile() {
+    
+}

@@ -5,9 +5,19 @@ const adviceIdEl = document.querySelector('#adviceID');
 const diceBtn = document.querySelector('#diceBtn');
 
 
-diceBtn.addEventListener('click', async ()=>{
-    const { slip } = await getAdvice();
+diceBtn.addEventListener('click', displayAdvice);
 
-    adviceEl.innerHTML = slip.advice;
-    adviceIdEl.innerHTML = slip.id;
-})
+async function displayAdvice(){
+    const { slip } = await getAdvice();
+    
+    adviceEl.textContent = slip.advice;
+    adviceIdEl.textContent = slip.id;
+    // disableBtn();
+}
+displayAdvice();
+
+function disableBtn(){
+    setTimeout(()=>{
+        diceBtn.disabled = true;
+    }, 2000)
+}

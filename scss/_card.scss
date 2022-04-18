@@ -1,10 +1,10 @@
 .card{
     @include flex(column, center, space-around);
     position: relative;
-    // gap: 15px;
+    // gap: 1.rem;
     
-    height: 70%;
-    width: 38vw;
+    height: 20rem;
+    width: 35rem;
     padding: 1.5rem 2rem;
 
     text-align: center;
@@ -12,15 +12,24 @@
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
 
-    .advice{
-        color: $primary-color;
-    }
     .advice-number{
+        @include flex();
+        height: 10%;
+        width: 100%;
         color: $secondary-color;
         font-size: 10px;
         font-weight: 800;
         letter-spacing: 5px;
         text-transform: uppercase;
+    }
+    .advice{
+        @include center();
+        height: 50%;
+        color: $primary-color;
+    }
+    .divider{
+        @include center();
+        height: 30%;
     }
     .dice-btn{
         cursor: pointer;
@@ -29,7 +38,7 @@
         
         display: grid;
         place-items: center;
-        margin-top: 1rem;
+        margin-top: 2rem;
         width: 50px;
         height: 50px;
 
