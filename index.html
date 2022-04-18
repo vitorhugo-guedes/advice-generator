@@ -13,22 +13,24 @@
 
   <section class="card">
 
-    <small class="advice-number">advice #500</small>
+    <small class="advice-number">advice #<span id="adviceID">500</span></small>
 
-    <h4 class="advice">
+    <h4 id="advice" class="advice">
       "Lorem ipsum dolor sit amet, 
       consectetur adipisicing elit. Molestiae voluptates, 
       alias voluptas quasi quisquam doloribus.""
     </h4>
-    <span></span>
-    <button class="dice-button"><img src="dist/images/icon-dice.svg" alt=""></button>
+    
+    <span><img src="./dist/images/pattern-divider-desktop.svg" alt="divider"></span>
+
+    <button id="diceBtn" class="dice-btn"><img src="dist/images/icon-dice.svg" alt="dice icon"></button>
   </section>
   
   <footer>
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Vitor Hugo</a>.
+    Coded by <a target="_blank" href="https://github.com/vitorhugo-guedes">Vitor Hugo</a>.
   </footer>
 
-  <script src="./dist/source/main.js"></script>
+  <script type="module" src="./dist/source/main.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-@import 'config';
+@import 'config', 'card';
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap');
 
 h4{
@@ -25,50 +25,5 @@ footer{
     & a {
         color: $secondary-color;
         text-decoration: none;
-    }
-}
-
-.card{
-    @include flex(column, center, center);
-    position: relative;
-    gap: 15px;
-    
-    height: 60%;
-    width: 38vw;
-    padding: 1.5rem 2rem;
-
-    text-align: center;
-    background: $card-bg;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
-
-    .advice{
-        color: $primary-color;
-    }
-    .advice-number{
-        color: $secondary-color;
-        font-size: 10px;
-        font-weight: 800;
-        text-transform: uppercase;
-        letter-spacing: 5px;
-    }
-    .dice-button{
-        cursor: pointer;
-        position: absolute;
-        bottom: -15px;
-        
-        display: grid;
-        place-items: center;
-        width: 50px;
-        height: 50px;
-
-        border: none;
-        border-radius: 50%;
-        background-color: $secondary-color;
-
-        & img{
-            width: 20px;
-            height: 20px;
-        }
     }
 }
