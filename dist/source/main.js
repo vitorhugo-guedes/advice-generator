@@ -4,7 +4,6 @@ const adviceEl = document.querySelector('#advice');
 const adviceIdEl = document.querySelector('#adviceID');
 const diceBtn = document.querySelector('#diceBtn');
 
-
 diceBtn.addEventListener('click', displayAdvice);
 
 async function displayAdvice(){
@@ -12,12 +11,16 @@ async function displayAdvice(){
     
     adviceEl.textContent = slip.advice;
     adviceIdEl.textContent = slip.id;
-    // disableBtn();
+    disableBtn();
 }
 displayAdvice();
 
 function disableBtn(){
+    diceBtn.disabled = true;
+    diceBtn.classList.add('dice-btn__disabled');
+
     setTimeout(()=>{
-        diceBtn.disabled = true;
-    }, 2000)
+        diceBtn.disabled = false;
+        diceBtn.classList.remove('dice-btn__disabled');
+    }, 2100)
 }

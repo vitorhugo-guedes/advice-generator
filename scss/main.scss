@@ -7,12 +7,16 @@ h4{
 }
 
 body{
-    @include center();    
-    min-height: 100vh;
+    @include center(); 
+    height: 100vh;
     overflow: hidden;
 
     font-family: 'Manrope';
     background: $body-bg;
+
+    @include mobile{
+        max-width: $mobileWidth;
+    }
 }
 
 footer{
@@ -23,5 +27,9 @@ footer{
     & a {
         color: $secondary-color;
         text-decoration: none;
+    }
+    @include mobile {
+        width: 80%;
+        overflow-wrap: break-word;
     }
 }

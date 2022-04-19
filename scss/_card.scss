@@ -1,8 +1,7 @@
 .card{
     @include flex(column, center, space-around);
     position: relative;
-    // gap: 1.rem;
-    
+ 
     height: 20rem;
     width: 35rem;
     padding: 1.5rem 2rem;
@@ -12,13 +11,23 @@
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
 
+    @include mobile{
+        height: 80%; 
+        width: 80%;
+        padding: 1rem 1.5rem;
+
+        .advice h4{
+            font-size: 20px;
+        }
+    }
     .advice-number{
         @include flex();
-        height: 10%;
+        height: 20%;
         width: 100%;
-        color: $secondary-color;
+
         font-size: 10px;
         font-weight: 800;
+        color: $secondary-color;
         letter-spacing: 5px;
         text-transform: uppercase;
     }
@@ -30,25 +39,45 @@
     .divider{
         @include center();
         height: 30%;
+
+        @include mobile{
+            img {
+                width: 100%;
+            }
+        }
     }
-    .dice-btn{
+    .btn{
         cursor: pointer;
         position: absolute;
         bottom: -25px;
-        
-        display: grid;
-        place-items: center;
-        margin-top: 2rem;
+
         width: 50px;
         height: 50px;
 
         border: none;
         border-radius: 50%;
+    }
+    .dice-btn{
+        @include center();
         background-color: $secondary-color;
 
+        &:hover{
+            box-shadow: 0 0 1.5rem 0 $secondary-color;
+        }
+        &:active{
+            border: none;
+            outline: none;
+            text-decoration: none;
+        }
         & img{
             width: 20px;
             height: 20px;
+        }
+    }
+    .dice-btn__disabled{
+        background-color: $btn-color__disabled;
+        &:hover{
+            box-shadow: 0 0 1.5rem 0 $btn-color__disabled;
         }
     }
 }

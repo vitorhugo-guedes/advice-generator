@@ -1,11 +1,12 @@
 // Color Text
 $primary-color: hsl(193, 38%, 86%);
 $secondary-color: hsl(150, 100%, 66%);
-
+$btn-color__disabled: hsl(217, 19%, 38%);
 // Background
-$GrayishBlue: hsl(217, 19%, 38%);
 $body-bg: hsl(218, 23%, 16%);
 $card-bg: hsl(217, 19%, 24%);
+// Media query
+$mobileWidth: 450px;
 
 *{
     box-sizing: border-box;
@@ -26,5 +27,7 @@ $card-bg: hsl(217, 19%, 24%);
 }
 
 @mixin mobile() {
-    
+    @media screen and (max-width: $mobileWidth) {
+        @content;
+    }
 }
